@@ -164,6 +164,9 @@ func (this *SocketController) ToSend() {
 		this.StopRun()
 	}
 
+	this.Data["json"] = response
+	this.ServeJSON()
+
 	response.Result = content
 
 	for key, val := range clients {
