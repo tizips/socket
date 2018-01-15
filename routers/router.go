@@ -7,7 +7,7 @@ import (
 
 func init() {
 
-	beego.Router("/", &controllers.SocketController{}, "*:ToConn")
+	beego.Router("/ws", &controllers.SocketController{}, "*:ToConn")
 
 	beego.Router("/send", &controllers.SocketController{}, "*:ToSend")
 }
