@@ -1,5 +1,5 @@
 AppName = socket
-HttpPort = ${HttpPort||9105}
+HttpPort = 9105
 RunMode = dev
 AutoRender = false
 EnableErrorsRender=false
